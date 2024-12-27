@@ -1,0 +1,35 @@
+<div class="container text-center pt-5 pb-5">
+  <div class="row justify-content-evenly">
+    <mat-card class="pt-3 pb-3">
+      <mat-card-title class="mb-3">{{ "header" | translate }}</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="form">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="text" matInput formControlName="email" />
+          </mat-form-field>
+          <div class="row"></div>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password" />
+          </mat-form-field>
+          <div>
+            <button
+              mat-raised-button
+              [disabled]="form.invalid"
+              (click)="onLogin()"
+              class="w-full bg-black text-white rounded-lg disabled:bg-gray-dark"
+            >
+              <!-- @if (isLoading$ | async) {
+            ...
+          } @else {
+            Login
+          } -->
+              {{ "login" | translate }}
+            </button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

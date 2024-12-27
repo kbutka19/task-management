@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user@example.com",
+      "password": "password123",
+      "name": "John Doe"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$0av8u/YiYaQNpvalgfHKvO/2CP6ZTitXbbhRqlZyCrHGnIvjqeQae",
+      "id": 2
+    },
+    {
+      "email": "admin2@gmail.com",
+      "password": "$2a$10$kViqP.A.gaqQfJTTtPgEjO8wUbaEkCp0tLfAUYpQ9NdwAWafy4xXK",
+      "id": 3
+    }
+  ],
+  "posts":[
+    {
+      "user":"kejsi",
+      "userId":2
+    }
+  ]
+}
